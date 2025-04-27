@@ -1,0 +1,44 @@
+@you_must_read_this.txt
+
+실습 파일에 대하여:
+
+1. 게임을 직접 만들어보는 제12장부터는 더 이상 주피터 노트북 파일을 사용하지 않습니다.
+2. 터미널에서 실행 명령을 입력하여 실행합니다.
+   (예) "python alien_invasion.py" 을 입력하여 실행.
+3. 게임을 만들어가는 과정에서 파일의 내용이 계속해서 추가되거나 변경됩니다.
+4. 교과서 원본에는 파일명이 일정하게 유지되거나, 몇 개의 폴더로 나누어 버전이 관리됩니다.
+그러나, 이 방법은 중간 중간에 변경되어가는 내용을 실험해 보는데는 문제가 됩니다. 한 폴더 내의 파일은 개발 과정의 그 단계 최종 결과물이니까요.
+5. 우리 강의에서 사용되는 파일은 다른 체계로 관리되기 때문에 여러분이 강의 슬라이드에 있는 내용을 따라가면서 즉시 테스트할 수 있게 해줍니다. 사용 요령은 다음과 같습니다.
+(기본적으로, 파일명이 슬라이드의 코드 박스 우측 상단에 나와 있습니다)
+
+파일 사용법:
+1. alien_invasion.py : 이 게임의 메인 모듈
+1) 코드가 변경/추가될 때마다 이름이 변경됩니다.
+   가령, clock 이 추가된 경우 이름이 alien_invasion_clock.py 가 됩니다.
+   실행하려면, python alien_invasion_clock.py 를 입력하면 되겠죠?
+2) 초반부 clock이 추가되고, 백그라운드, 설정 등이 추가되면서 다음과 같이 변해갑니다.
+alien_invasion_clock.py
+alien_invasion_clock_bg.py
+alien_invasion_clock_bg_setting.py
+...
+alien_invasion_clock_bg_setting_ship_refactor_refactor.py
+3) 그런데, 이렇게 계속 늘려갈 수가 없어요(이름이 너무 길어서 불편해요). 그래서 중요한 기능이 추가되는 부분에서 다시 짧게 갑니다.
+alien_invasion_pilot.py
+alien_invasion_pilot_right.py
+alien_invasion_pilot_both.py
+alien_invasion_pilot_both_refactor.py
+...
+alien_invasion_pilot_both_refactor_quit_full.py
+
+이렇게 진행됩니다.
+
+2. settings.py, ship.py
+1) 이 파일들은 메인 파일에서 import 하는 모듈들이므로, 이름을 바꾸면 메인 모듈에서도 바꿔야 되므로 상당히 번거롭고 오류의 원인이 됩니다.
+2) 그래서, 내용이 변경된 경우, 변경된 현재 파일명은 원래대로 사용하고 지난 버전을 다른 이름으로 변경해 두었습니다.
+3) 따라서 실습하면서, 예를 들어, 총알에 대한 설정이 처음 추가된 버전에서 실습하려면, settings_bullet.py를 settings.py로 복사해서 사용해야 합니다.
+4) 혼동이 생길 수 있지만, 강의 슬라이드를 자세히 보면 어렵지 않을 것입니다.
+
+3. 기타 독립적인 파일들: first.py, second.py 등은 별도의 파일들이므로 신경쓸 것이 없습니다.
+
+4. 끝으로, 중간부터 시작하면 매치시키기 어려울 수 있으니, 처음부터 따라가면서 실습하면 어렵지 않습니다.
+ 
